@@ -4,16 +4,10 @@ export class CommonPage {
     //  }
      visitBaseUrl(){
        cy.visit(Cypress.config('baseUrl'))
-
      }
+     
      checkBodyText(text){
       cy.get('body').should('contain', text);
     }
-  
-   
- 
-  
- 
- 
- 
-   }
+    
+}
