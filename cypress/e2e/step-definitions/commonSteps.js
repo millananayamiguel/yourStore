@@ -11,5 +11,9 @@ let commonPage= new CommonPage();
     Given("I visit my url", (baseUrl) => {
       commonPage.visitBaseUrl(baseUrl);
        });
+       When("I check that the page contain the text Your Store",(text)=>{
+        commonPage.checkBodyText(text);
+      })
+       
 
    
