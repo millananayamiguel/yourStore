@@ -1,0 +1,31 @@
+{
+  "name": "yourstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:smoke": "cypress run --env tags=@smoke --spec '**/*.feature'",
+    "cy:regression": "cypress run --env tags=@regression --spec '**/*.feature'",
+    "cy:apiTest": "cypress run --spec '**/*.js'",
+    "cy:loginTest": "cypress run --env tags=@loginTest --spec '**/*.feature'",
+    "cy:loginSteps": "cypress run --env tags=@loginSteps"
+  },
+  "keywords": [],
+  "author": "Miguel MIllan",
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/step-definitions/*.js"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.8.1",
+    "cypress-cucumber-steps": "^3.59.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-on-fix": "^1.0.3"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.1"
+  }
+}
