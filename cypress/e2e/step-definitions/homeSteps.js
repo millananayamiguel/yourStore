@@ -8,6 +8,24 @@ let homePage = new Homepage();
 Given (' I visit the home page', (baseUrl)=>{
     homePage.navigate(baseUrl);
 })
-When("I check that the page contain the text Your Store  ",(text)=>{
-    homePage.bodyText(text);
-  })
+When ('I search product',()=>{
+    homePage.searchProduct();
+})
+When('I click search product',()=>{
+    homePage.clickSearchProduct();
+})
+When('I select categories',()=>{
+    homePage.selectCategories();
+})
+When('I check Subcategories',()=>{
+    homePage.checkSubcategories();
+})
+When('I button search',()=>{
+    homePage.buttonSearch();
+})
+When('I select Product',()=>{
+    homePage.selectProduct();
+})
+When('I select photho',()=>{
+    homePage.selectPhoto();
+})
