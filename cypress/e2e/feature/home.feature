@@ -3,6 +3,7 @@ Feature: visit the home page
 
     Background: Visit page home  
         Given I visit my url
+<<<<<<< HEAD
         And   I select currency
         And I select "contain" the text "€ Euro"
 
@@ -17,3 +18,8 @@ Feature: visit the home page
         And I select photho
 
        # Scenario: Search in product
+=======
+
+    Scenario: Contain text 
+        Given I check that the page contain the text "Your Store"
+>>>>>>> 95b0ef1644873058d5df43cebdb717ba04ab30df
