@@ -17,6 +17,7 @@ export class CommonPage {
    }
    currencySelect(){
     cy.get(categorySelect).should('be.visible').click()
+    
   }
   
   
