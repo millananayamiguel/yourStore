@@ -9,3 +9,15 @@ Given ('I select My Account',()=>{
 Given('I select Registre',()=>{
     loginPage.selectRegistre();
 })
+When('I type {string} on the firstName',(firstName)=>{
+    loginPage.typeRegistreFirstName(firstName);
+})
+When('I type {string} on the lastName',(lastName)=>{
+    loginPage.typeRegistreLastName(lastName);
+})
+When('I type {string} on the e-mail',()=>{
+    loginPage.typeRegistreEmail();
+})
+When('I type {string} on the telephone',()=>{
+    loginPage.typeRegistreTelephone();
+})

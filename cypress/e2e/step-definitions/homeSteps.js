@@ -29,3 +29,4 @@ When('I select Product',()=>{
 When('I select photho',()=>{
     homePage.selectPhoto();
 })
+
