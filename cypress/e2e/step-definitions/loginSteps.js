@@ -21,3 +21,9 @@ When('I type {string} on the e-mail',()=>{
 When('I type {string} on the telephone',()=>{
     loginPage.typeRegistreTelephone();
 })
+When('I type {string} on the password credential input',(password)=>{
+    loginPage.typePassword(password);
+})
+When('I confirm {string} on the confirm password',(password)=>{
+    loginPage.confirPassword(password);
+})

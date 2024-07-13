@@ -29,6 +29,12 @@ export class LoginPage {
     typeRegistreTelephone(){
         cy.get(registreTelephone).type('658458740').should('be.empty').and('have.value','658458740')
     }
+    typePassword(password){
+        cy.get('#input-password',{timeout:8000}).should('be.empty').type(password).should('have.value', password)
+    }
+    confirPassword(password){
+        cy.get('#input-confirm',{timeout:8000}).should('be.empty').type(password).should('have.value', password)
+    }
 
 
 
