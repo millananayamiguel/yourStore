@@ -20,7 +20,7 @@ module.exports = defineConfig({
     failOnStatusCode: false,
     baseUrl: 'http://opencart.abstracta.us/',
     chromeWebSecurity: false,
-    specPattern: ['**/*.feature', '**/apiTests/*/*.js'],
+    specPattern: '**/*.feature',
     defaultCommandTimeout: 10000,
     numTestsKeptInMemory: 10,
     env: {
